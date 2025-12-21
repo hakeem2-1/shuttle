@@ -1,0 +1,41 @@
+.signup{
+    color: rgb(44, 48, 44);
+    margin-left: 500px;
+    
+}
+.fname{
+    color: chocolate;
+    margin-left: 458px;
+
+}
+.lname{
+    color: chocolate;
+    margin-left: 458px;
+}
+.pw{
+    color: chocolate;
+    margin-left: 458px;
+}
+.un{
+    color: chocolate;
+    margin-left: 458px;
+}
+.but{
+    margin-left: 550px;
+    margin-top: 20px;
+}
+.ffname{
+    margin-top: 20px;
+}
+.llname{
+    margin-top: 20px;
+}
+.uun{
+    margin-top: 20px;
+}
+.ppw{
+    margin-top: 20px;
+}
+body{
+    background-color: rgb(205, 188, 188);
+}

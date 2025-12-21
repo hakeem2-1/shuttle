@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Login.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="lgpage">LOGIN PAGE</h1>
+    <label class="uun">UserName:</label><input type="text" id="uuu" class="uzi"></br>
+    <label class="ppw">PassWord:</label><input type="password" id="ppp" class="uzn"></br>
+    <button class="bus"   onclick="shuttle()">Log In</button>
+
+    
+    <script>
+        function shuttle(){
+            let user = document.getElementById("uuu").value
+            let pass = document.getElementById("ppp").value
+
+               let olduser= localStorage.getItem("user")
+                let oldpass= localStorage.getItem("pass")
+
+                if(olduser == user && oldpass == pass){
+                    alert("successfully validated")
+                    window.location.href = "Dashpage.html"
+                }else{
+                    alert("validation failed")
+                }
+               
+            }
+        
+    
+             
+    </script>   
+</body>
+</html>

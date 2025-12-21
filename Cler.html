@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="Cler.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="signup">Signup page</h1>
+<label class="fname"> First Name :</label>  <input class="ffname" type="text" id="fname"/><br/>
+<label class="lname">Last  Name  :</label><input class="llname" type="text" id="lname"/> <br/>
+<label class="un">UserName :</label><input class="uun" type="text" id="un"/><br/>
+  
+ <label class="pw"> PassWord :</label> <input class="ppw" type="password" id="pw"/><br/>
+ 
+ <button class="but" onclick="handlesignup()"  >  SignUp  </button >
+ 
+ <script>
+
+  function handlesignup(){
+
+  
+    let firstname = document.getElementById("fname").value
+    let lastname = document.getElementById("lname").value
+    let username = document.getElementById("un").value
+    let password= document.getElementById("pw").value
+  
+  if (firstname == "" || lastname == "" || username == "" || password ==""){
+    alert("please fill all the details")
+  }else{
+    localStorage.setItem("user",username)
+    localStorage.setItem("pass",password)
+    alert("signup success")
+    
+    window.location.href = "Login.html"
+  }
+}
+ </script>   
+</body>
+</html>

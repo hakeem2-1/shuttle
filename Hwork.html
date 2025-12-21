@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="project"></h1>
+    <button onclick="but()">1 </button>
+    <button onclick="but2()">2</button>
+    <button onclick="but3()">3</button>
+    <button onclick="but4()">4</button>
+    <button onclick="but5()">5</button>
+
+    <script>
+        var date = new Date()
+
+    
+        function but(){
+            let day = date.getDate();
+            
+          document.getElementById("project").textContent = day
+         }
+
+         function but2(){
+            let hour = date.getHours();
+            document.getElementById("project").textContent = hour
+         }
+
+         function but3(){
+            let min = date.getMinutes();
+            document.getElementById("project").textContent = min
+         }
+
+         function but4(){
+            let sec = date.getSeconds();
+            document.getElementById("project").textContent = sec
+         }
+
+         function but5(){
+            let yer = date.getFullYear();
+            document.getElementById("project").textContent = yer
+         }
+  
+    </script>
+</body>
+</html>
